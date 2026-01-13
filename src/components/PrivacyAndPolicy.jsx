@@ -1,208 +1,67 @@
 import React from "react";
-import { ShieldCheck, User, Lock, Share2, Settings, Clock, Users, RefreshCw, PhoneCall, RotateCcw } from "lucide-react";
 
 const PrivacyAndPolicy = () => {
-    const sections = [
-        {
-            icon: <User size={28} color="#2E7D32" />,
-            title: "1. Information We Collect",
-            content: (
-                <ul className="ps-3">
-                    <li>First Name and Last Name</li>
-                    <li>Mobile Number and Email Address</li>
-                    <li>Profile Information (updated first name, Last name, email, profile picture)</li>
-                    <li>Delivery Address and Location Information</li>
-                    <li>Order History.</li>
-                    <li>Payment Method Details (via secure gateways)</li>
-                </ul>
-            ),
-        },
-        {
-            icon: <Settings size={28} color="#2E7D32" />,
-            title: "2. How We Use Your Information",
-            content: (
-                <ul className="ps-3">
-                    <li>Deliver 100% vegetarian meals to your location</li>
-                    <li>Personalize food recommendations</li>
-                    <li>Support profile management</li>
-                    <li>Improve app performance and user experience</li>
-                    <li>Process payments and send order updates</li>
-                </ul>
-            ),
-        },
-        {
-            icon: <Lock size={28} color="#2E7D32" />,
-            title: "3. How We Protect Your Data",
-            content: (
-                <ul className="ps-3">
-                    <li>Data encryption and secure cloud storage</li>
-                    <li>Trusted third-party payment systems</li>
-                    <li>Strict access control</li>
-                    <li>Regular security monitoring</li>
-                </ul>
-            ),
-        },
-        {
-            icon: <Share2 size={28} color="#2E7D32" />,
-            title: "4. Sharing Your Data",
-            content: (
-                <>
-                    <p>We do <strong>not sell</strong> your personal information.</p>
-                    <ul className="ps-3">
-                        <li>Delivery partners</li>
-                        <li>Payment gateways</li>
-                        <li>Analytics tools</li>
-                        <li>Government authorities when required</li>
-                    </ul>
-                </>
-            ),
-        },
-        {
-            icon: <ShieldCheck size={28} color="#2E7D32" />,
-            title: "5. Your Rights & Choices",
-            content: (
-                <>
-                    <ul className="ps-3">
-                        <li>Update first name, last name, email, and profile picture</li>
-                        <li>Modify saved addresses</li>
-                        <li>Access order history</li>
-                        <li>You can delete your Account any time.</li>
-                    </ul>
-                    <p>
-                        Email us at:{" "}
-                        <a href="mailto:support@vegiffyy.com" className="text-success fw-semibold">
-                            support@vegiffyy.com
-                        </a>
-                    </p>
-                </>
-            ),
-        },
-        {
-            icon: <Clock size={28} color="#2E7D32" />,
-            title: "6. Data Retention",
-            content: (
-                <p>
-                    Data is retained only for service operations, customer support, and legal compliance.
-                    You can delete your account any time.
-                </p>
-            ),
-        },
-        {
-            icon: <Users size={28} color="#2E7D32" />,
-            title: "7. Children's Privacy",
-            content: (
-                <p>
-                    Vegiffyy is intended for users aged 18+. We do not knowingly collect data from
-                    children below 18 without parental consent.
-                </p>
-            ),
-        },
-        {
-            icon: <RefreshCw size={28} color="#2E7D32" />,
-            title: "8. Policy Changes",
-            content: (
-                <p>
-                    We may update this policy occasionally. Continued app usage means you accept the
-                    latest version.
-                </p>
-            ),
-        },
-        {
-            icon: <PhoneCall size={28} color="#2E7D32" />,
-            title: "9. Contact Us",
-            content: (
-                <p>
-                    For any queries, contact:{" "}
-                    <a href="mailto:support@vegiffyy.com" className="text-success fw-semibold">
-                        support@vegiffyy.com
-                    </a>
-                </p>
-            ),
-        },
-        {
-            icon: <RotateCcw size={28} color="#2E7D32" />,
-            title: "10. Refund & Cancellation Policy",
-            content: (
-                <ul className="ps-3">
-                    <li>Users can cancel an order within <strong>1 minute</strong> after placing it.</li>
-                    <li>Refunds are processed within <strong>3–4 working days</strong>.</li>
-                    <li>No cancellations allowed once food preparation has started.</li>
-                    <li>Refund timeline depends on the payment provider.</li>
-                </ul>
-            ),
-        },
-    ];
+  return (
+    <div className="container py-5">
+      <h2 className="mb-4 text-center">Privacy Policy</h2>
 
-    const today = new Date().toLocaleDateString("en-IN", {
-        day: "2-digit",
-        month: "long",
-        year: "numeric",
-    });
+      <p>
+        We value your privacy and are committed to protecting your personal and
+        business information. This Privacy Policy explains how we collect, use,
+        store, and safeguard your data when you register or use our platform.
+      </p>
 
-    return (
-        <div className="pb-5" style={{ backgroundColor: "#F7FFF8" }}>
-            {/* HEADER */}
-            <div
-                className="text-center py-5 mb-4"
-                style={{
-                    background: "linear-gradient(135deg, #2E7D32, #66BB6A)",
-                    color: "#fff",
-                    borderBottomLeftRadius: "40px",
-                    borderBottomRightRadius: "40px",
-                }}
-            >
-                <h1 className="fw-bold">Vegiffyy - Privacy Policy</h1>
-                <p className="mt-2" style={{ opacity: 0.9 }}>
-                    Your trust is our priority. We keep your data safe & secure.
-                </p>
-                <p className="mt-3 fw-semibold" style={{ fontSize: "15px", opacity: 0.9 }}>
-                    📅 Last Updated: {today}
-                </p>
-            </div>
+      <h5 className="mt-4">1. Information We Collect</h5>
+      <ul>
+        <li>Restaurant / Business details (name, description, location)</li>
+        <li>Contact information (email, mobile number)</li>
+        <li>Authentication details (encrypted passwords, OTPs)</li>
+        <li>Legal documents (GST, FSSAI, PAN, Aadhaar)</li>
+        <li>Geolocation data (latitude, longitude)</li>
+        <li>Bank account details (masked for display)</li>
+      </ul>
 
-            {/* SECTIONS */}
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-xl-10 col-lg-11 col-12">
-                        {sections.map((sec, i) => (
-                            <div
-                                key={i}
-                                className="p-4 mb-4 shadow-sm animate-section"
-                                style={{
-                                    background: "#ffffff",
-                                    borderRadius: "12px",
-                                    borderLeft: "6px solid #2E7D32",
-                                }}
-                            >
-                                <div className="d-flex align-items-center gap-3 mb-3">
-                                    {sec.icon}
-                                    <h4 className="fw-semibold m-0" style={{ color: "#1B5E20" }}>
-                                        {sec.title}
-                                    </h4>
-                                </div>
-                                <div style={{ color: "#2b2b2b" }}>{sec.content}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
+      <h5 className="mt-4">2. Use of Information</h5>
+      <ul>
+        <li>Vendor verification and onboarding</li>
+        <li>Order, payout, and commission processing</li>
+        <li>Legal and regulatory compliance</li>
+        <li>Fraud prevention and security monitoring</li>
+      </ul>
 
-            {/* ANIMATION CSS */}
-            <style>{`
-                .animate-section {
-                    opacity: 0;
-                    transform: translateY(20px);
-                    animation: fadeInUp 0.6s ease forwards;
-                }
-                @keyframes fadeInUp {
-                    to {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-            `}</style>
-        </div>
-    );
+      <h5 className="mt-4">3. Document Handling</h5>
+      <p>
+        Uploaded documents (images or PDFs) are stored securely. Sensitive files
+        like Aadhaar, PAN, and bank details are accessible only to authorized
+        personnel.
+      </p>
+
+      <h5 className="mt-4">4. Data Security</h5>
+      <ul>
+        <li>Passwords are hashed and encrypted</li>
+        <li>Secure servers and restricted access</li>
+        <li>Masked display of sensitive bank details</li>
+      </ul>
+
+      <h5 className="mt-4">5. Generated Documents</h5>
+      <p>
+        Generated PDFs such as Vendor Agreements and Declarations are created
+        using your submitted data and are available for download only by you.
+      </p>
+
+      <h5 className="mt-4">6. Data Sharing</h5>
+      <p>
+        We do not sell or rent your data. Information is shared only when legally
+        required or for essential operational purposes.
+      </p>
+
+      <h5 className="mt-4">7. Policy Updates</h5>
+      <p>
+        We may update this policy from time to time. Continued use of the
+        platform implies acceptance of changes.
+      </p>
+    </div>
+  );
 };
 
 export default PrivacyAndPolicy;
