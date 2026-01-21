@@ -1,9 +1,9 @@
 import './App.css'
 import { Routes, Route} from 'react-router-dom';
 import Home from './components/Home';
-import PrivacyAndPolicy from './components/PrivacyAndPolicy';
-import TermsandConditions from './components/TermsAndConditions';
 import Contact from './components/Cantact';
+import PrivacyPolicy from './components/PrivacyAndPolicy';
+import TermsAndConditions from './components/TermsAndConditions';
 
 function App() {
 
@@ -12,8 +12,8 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/privacy-and-policy' element={<PrivacyAndPolicy />} />
-        <Route path='/terms-and-conditions' element={<TermsandConditions />} />
+        <Route path='/privacy-and-policy' element={<PrivacyPolicy />} />
+        <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
         <Route path='/contact' element={<Contact/>} />
       </Routes>
     </>
