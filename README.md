@@ -13,3 +13,4 @@ If you are developing a production application, we recommend using TypeScript wi
 "# Vegiffy-policy" 
 "# Vegiffyy-vendor-policy" 
 "# Vegiffy-rider-policies" 
+"# VidyaEnroll-policy" 
