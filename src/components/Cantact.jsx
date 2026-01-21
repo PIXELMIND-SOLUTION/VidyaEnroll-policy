@@ -16,7 +16,7 @@ const Contact = () => {
               <strong>Email:</strong> admissions@vidyaenroll.com
             </li>
             <li className="list-group-item">
-              <strong>Phone:</strong> +91 96663 17749
+              <strong>Phone:</strong> +91 9573817475
             </li>
             <li className="list-group-item">
               <strong>Support Hours:</strong> Monday to Saturday (9:00 AM – 8:00 PM IST)
